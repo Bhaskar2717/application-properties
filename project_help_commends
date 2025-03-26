@@ -1,0 +1,49 @@
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-topics.bat --describe --topic customer-topic --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-console-consumer.bat --topic customer-topic --from-beginning --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-console-consumer.bat --topic reservation-topic --from-beginning --bootstrap-server localhost:9092
+
+.\bin\windows\kafka-console-consumer.bat --topic payment-topic --from-beginning --bootstrap-server localhost:9092
+
+
+https://edureka-co.zoom.us/j/94793189494?pwd=m6yfMf3bCgUTXHItCanTZVbWb7H0bZ.1#success
+
+
+
+
+
+customer Service JSON INPUT
+{"name":"charvik",
+"email":"charvik.2738@gmail.com",
+"phone":"9292989898",
+"age":"23",
+"address":"pune",
+"state":"MH"
+}
+
+postman validation for Reservation API Input
+
+{{"customerId":"2",
+"reservationDateTime":"2025-03-21T14:30:00",
+"roomnumber":"2"}
+
+Payment service Input
+
+{
+  "studentId": 2,
+  "amount": 150.00,
+  "paymentMethod": "Credit Card",
+  "status": "PENDING",
+  "createdAt": "2025-03-25T16:25:17"
+}
+
+
